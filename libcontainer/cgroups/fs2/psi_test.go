@@ -6,7 +6,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/opencontainers/runc/libcontainer/cgroups"
+	"github.com/Furisto/runc/libcontainer/cgroups"
 )
 
 const examplePSIData = `some avg10=1.71 avg60=2.36 avg300=2.57 total=230548833

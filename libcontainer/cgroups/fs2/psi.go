@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/opencontainers/runc/libcontainer/cgroups"
+	"github.com/Furisto/runc/libcontainer/cgroups"
 )
 
 func statPSI(dirPath string, file string, stats *cgroups.PSIStats) error {
