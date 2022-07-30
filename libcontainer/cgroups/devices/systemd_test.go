@@ -7,10 +7,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/opencontainers/runc/libcontainer/cgroups"
-	"github.com/opencontainers/runc/libcontainer/cgroups/systemd"
-	"github.com/opencontainers/runc/libcontainer/configs"
-	"github.com/opencontainers/runc/libcontainer/devices"
+	"github.com/Furisto/runc/libcontainer/cgroups"
+	"github.com/Furisto/runc/libcontainer/cgroups/systemd"
+	"github.com/Furisto/runc/libcontainer/configs"
+	"github.com/Furisto/runc/libcontainer/devices"
 )
 
 // TestPodSkipDevicesUpdate checks that updating a pod having SkipDevices: true

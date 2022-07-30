@@ -61,7 +61,7 @@ function teardown() {
 	[[ "$(cat pid.txt)" =~ [0-9]+ ]]
 }
 
-# https://github.com/opencontainers/runc/pull/2897
+# https://github.com/Furisto/runc/pull/2897
 @test "runc run [rootless with host pidns]" {
 	requires rootless_no_features
 

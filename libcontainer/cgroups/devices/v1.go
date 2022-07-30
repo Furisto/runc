@@ -5,10 +5,10 @@ import (
 	"errors"
 	"reflect"
 
-	"github.com/opencontainers/runc/libcontainer/cgroups"
-	"github.com/opencontainers/runc/libcontainer/configs"
-	"github.com/opencontainers/runc/libcontainer/devices"
-	"github.com/opencontainers/runc/libcontainer/userns"
+	"github.com/Furisto/runc/libcontainer/cgroups"
+	"github.com/Furisto/runc/libcontainer/configs"
+	"github.com/Furisto/runc/libcontainer/devices"
+	"github.com/Furisto/runc/libcontainer/userns"
 )
 
 var testingSkipFinalCheck bool

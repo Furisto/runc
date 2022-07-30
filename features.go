@@ -4,11 +4,11 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/opencontainers/runc/libcontainer/capabilities"
-	"github.com/opencontainers/runc/libcontainer/configs"
-	"github.com/opencontainers/runc/libcontainer/seccomp"
-	"github.com/opencontainers/runc/libcontainer/specconv"
-	"github.com/opencontainers/runc/types/features"
+	"github.com/Furisto/runc/libcontainer/capabilities"
+	"github.com/Furisto/runc/libcontainer/configs"
+	"github.com/Furisto/runc/libcontainer/seccomp"
+	"github.com/Furisto/runc/libcontainer/specconv"
+	"github.com/Furisto/runc/types/features"
 	"github.com/opencontainers/runtime-spec/specs-go"
 	"github.com/urfave/cli"
 )
@@ -19,7 +19,7 @@ var featuresCommand = cli.Command{
 	ArgsUsage: "",
 	Description: `Show the enabled features.
    The result is parsable as a JSON.
-   See https://pkg.go.dev/github.com/opencontainers/runc/types/features for the type definition.
+   See https://pkg.go.dev/github.com/Furisto/runc/types/features for the type definition.
    The types are experimental and subject to change.
 `,
 	Action: func(context *cli.Context) error {

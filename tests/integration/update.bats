@@ -222,7 +222,7 @@ EOF
 	check_systemd_value "TasksMax" 20
 
 	if [ "$HAVE_SWAP" = "yes" ]; then
-		# Test case for https://github.com/opencontainers/runc/pull/592,
+		# Test case for https://github.com/Furisto/runc/pull/592,
 		# checking libcontainer/cgroups/fs/memory.go:setMemoryAndSwap.
 
 		runc update test_update --memory 30M --memory-swap 50M

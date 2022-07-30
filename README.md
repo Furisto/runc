@@ -1,10 +1,10 @@
 # runc
 
-[![Go Report Card](https://goreportcard.com/badge/github.com/opencontainers/runc)](https://goreportcard.com/report/github.com/opencontainers/runc)
-[![Go Reference](https://pkg.go.dev/badge/github.com/opencontainers/runc.svg)](https://pkg.go.dev/github.com/opencontainers/runc)
+[![Go Report Card](https://goreportcard.com/badge/github.com/Furisto/runc)](https://goreportcard.com/report/github.com/Furisto/runc)
+[![Go Reference](https://pkg.go.dev/badge/github.com/Furisto/runc.svg)](https://pkg.go.dev/github.com/Furisto/runc)
 [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/588/badge)](https://bestpractices.coreinfrastructure.org/projects/588)
-[![gha/validate](https://github.com/opencontainers/runc/workflows/validate/badge.svg)](https://github.com/opencontainers/runc/actions?query=workflow%3Avalidate)
-[![gha/ci](https://github.com/opencontainers/runc/workflows/ci/badge.svg)](https://github.com/opencontainers/runc/actions?query=workflow%3Aci)
+[![gha/validate](https://github.com/Furisto/runc/workflows/validate/badge.svg)](https://github.com/Furisto/runc/actions?query=workflow%3Avalidate)
+[![gha/ci](https://github.com/Furisto/runc/workflows/ci/badge.svg)](https://github.com/Furisto/runc/actions?query=workflow%3Aci)
 [![CirrusCI](https://api.cirrus-ci.com/github/opencontainers/runc.svg)](https://cirrus-ci.com/github/opencontainers/runc)
 
 ## Introduction
@@ -13,14 +13,14 @@
 
 ## Releases
 
-You can find official releases of `runc` on the [release](https://github.com/opencontainers/runc/releases) page.
+You can find official releases of `runc` on the [release](https://github.com/Furisto/runc/releases) page.
 
 ## Security
 
 The reporting process and disclosure communications are outlined [here](https://github.com/opencontainers/org/blob/master/SECURITY.md).
 
 ### Security Audit
-A third party security audit was performed by Cure53, you can see the full report [here](https://github.com/opencontainers/runc/blob/master/docs/Security-Audit.pdf).
+A third party security audit was performed by Cure53, you can see the full report [here](https://github.com/Furisto/runc/blob/master/docs/Security-Audit.pdf).
 
 ## Building
 
@@ -32,7 +32,7 @@ In order to enable seccomp support you will need to install `libseccomp` on your
 ```bash
 # create a 'github.com/opencontainers' in your GOPATH/src
 cd github.com/opencontainers
-git clone https://github.com/opencontainers/runc
+git clone https://github.com/Furisto/runc
 cd runc
 
 make
@@ -42,8 +42,8 @@ sudo make install
 You can also use `go get` to install to your `GOPATH`, assuming that you have a `github.com` parent folder already created under `src`:
 
 ```bash
-go get github.com/opencontainers/runc
-cd $GOPATH/src/github.com/opencontainers/runc
+go get github.com/Furisto/runc
+cd $GOPATH/src/github.com/Furisto/runc
 make
 sudo make install
 ```

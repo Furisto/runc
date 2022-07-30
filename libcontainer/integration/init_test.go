@@ -5,10 +5,10 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/opencontainers/runc/libcontainer"
+	"github.com/Furisto/runc/libcontainer"
 	//nolint:revive // Enable cgroup manager to manage devices
-	_ "github.com/opencontainers/runc/libcontainer/cgroups/devices"
-	_ "github.com/opencontainers/runc/libcontainer/nsenter"
+	_ "github.com/Furisto/runc/libcontainer/cgroups/devices"
+	_ "github.com/Furisto/runc/libcontainer/nsenter"
 
 	"github.com/sirupsen/logrus"
 )

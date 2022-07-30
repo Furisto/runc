@@ -25,8 +25,8 @@ import (
 	"strings"
 	"sync"
 
+	"github.com/Furisto/runc/libcontainer/utils"
 	"github.com/containerd/console"
-	"github.com/opencontainers/runc/libcontainer/utils"
 	"github.com/urfave/cli"
 )
 

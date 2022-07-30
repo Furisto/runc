@@ -12,13 +12,13 @@ import (
 	"sync"
 	"time"
 
+	"github.com/Furisto/runc/libcontainer/cgroups"
+	"github.com/Furisto/runc/libcontainer/configs"
+	"github.com/Furisto/runc/libcontainer/devices"
+	"github.com/Furisto/runc/libcontainer/seccomp"
+	libcontainerUtils "github.com/Furisto/runc/libcontainer/utils"
 	systemdDbus "github.com/coreos/go-systemd/v22/dbus"
 	dbus "github.com/godbus/dbus/v5"
-	"github.com/opencontainers/runc/libcontainer/cgroups"
-	"github.com/opencontainers/runc/libcontainer/configs"
-	"github.com/opencontainers/runc/libcontainer/devices"
-	"github.com/opencontainers/runc/libcontainer/seccomp"
-	libcontainerUtils "github.com/opencontainers/runc/libcontainer/utils"
 	"github.com/opencontainers/runtime-spec/specs-go"
 	"github.com/sirupsen/logrus"
 

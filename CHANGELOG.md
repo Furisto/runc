@@ -68,7 +68,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
  * `runc spec` no longer sets any inheritable capabilities in the created
    example OCI spec (`config.json`) file.
 
-[GHSA-f3fp-gc8g-vw66]: https://github.com/opencontainers/runc/security/advisories/GHSA-f3fp-gc8g-vw66
+[GHSA-f3fp-gc8g-vw66]: https://github.com/Furisto/runc/security/advisories/GHSA-f3fp-gc8g-vw66
 
 
 ## [1.1.1] - 2022-03-28
@@ -224,7 +224,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
  * Improved an error message when dbus-user-session is not installed and
    rootless + cgroup2 + systemd are used. (#3212)
 
-[GHSA-v95c-p5hm-xq8f]: https://github.com/opencontainers/runc/security/advisories/GHSA-v95c-p5hm-xq8f
+[GHSA-v95c-p5hm-xq8f]: https://github.com/Furisto/runc/security/advisories/GHSA-v95c-p5hm-xq8f
 
 
 ## [1.0.2] - 2021-07-16
@@ -319,19 +319,19 @@ implementation (libcontainer) is *not* covered by this policy.
    cgroups at all during `runc update`). (#2994)
 
 <!-- minor releases -->
-[Unreleased]: https://github.com/opencontainers/runc/compare/v1.1.3...HEAD
-[1.1.0]: https://github.com/opencontainers/runc/compare/v1.1.0-rc.1...v1.1.0
-[1.0.0]: https://github.com/opencontainers/runc/releases/tag/v1.0.0
+[Unreleased]: https://github.com/Furisto/runc/compare/v1.1.3...HEAD
+[1.1.0]: https://github.com/Furisto/runc/compare/v1.1.0-rc.1...v1.1.0
+[1.0.0]: https://github.com/Furisto/runc/releases/tag/v1.0.0
 
 <!-- 1.0.z patch releases -->
-[Unreleased 1.0.z]: https://github.com/opencontainers/runc/compare/v1.0.3...release-1.0
-[1.0.3]: https://github.com/opencontainers/runc/compare/v1.0.2...v1.0.3
-[1.0.2]: https://github.com/opencontainers/runc/compare/v1.0.1...v1.0.2
-[1.0.1]: https://github.com/opencontainers/runc/compare/v1.0.0...v1.0.1
+[Unreleased 1.0.z]: https://github.com/Furisto/runc/compare/v1.0.3...release-1.0
+[1.0.3]: https://github.com/Furisto/runc/compare/v1.0.2...v1.0.3
+[1.0.2]: https://github.com/Furisto/runc/compare/v1.0.1...v1.0.2
+[1.0.1]: https://github.com/Furisto/runc/compare/v1.0.0...v1.0.1
 
 <!-- 1.1.z patch releases -->
-[Unreleased 1.1.z]: https://github.com/opencontainers/runc/compare/v1.1.3...release-1.1
-[1.1.3]: https://github.com/opencontainers/runc/compare/v1.1.2...v1.1.3
-[1.1.2]: https://github.com/opencontainers/runc/compare/v1.1.1...v1.1.2
-[1.1.1]: https://github.com/opencontainers/runc/compare/v1.1.0...v1.1.1
-[1.1.0-rc.1]: https://github.com/opencontainers/runc/compare/v1.0.0...v1.1.0-rc.1
+[Unreleased 1.1.z]: https://github.com/Furisto/runc/compare/v1.1.3...release-1.1
+[1.1.3]: https://github.com/Furisto/runc/compare/v1.1.2...v1.1.3
+[1.1.2]: https://github.com/Furisto/runc/compare/v1.1.1...v1.1.2
+[1.1.1]: https://github.com/Furisto/runc/compare/v1.1.0...v1.1.1
+[1.1.0-rc.1]: https://github.com/Furisto/runc/compare/v1.0.0...v1.1.0-rc.1

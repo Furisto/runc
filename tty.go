@@ -8,9 +8,9 @@ import (
 	"os/signal"
 	"sync"
 
+	"github.com/Furisto/runc/libcontainer"
+	"github.com/Furisto/runc/libcontainer/utils"
 	"github.com/containerd/console"
-	"github.com/opencontainers/runc/libcontainer"
-	"github.com/opencontainers/runc/libcontainer/utils"
 )
 
 type tty struct {

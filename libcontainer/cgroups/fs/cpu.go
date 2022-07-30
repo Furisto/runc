@@ -7,9 +7,9 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/opencontainers/runc/libcontainer/cgroups"
-	"github.com/opencontainers/runc/libcontainer/cgroups/fscommon"
-	"github.com/opencontainers/runc/libcontainer/configs"
+	"github.com/Furisto/runc/libcontainer/cgroups"
+	"github.com/Furisto/runc/libcontainer/cgroups/fscommon"
+	"github.com/Furisto/runc/libcontainer/configs"
 	"golang.org/x/sys/unix"
 )
 

@@ -9,9 +9,9 @@ import (
 	"text/tabwriter"
 	"time"
 
-	"github.com/opencontainers/runc/libcontainer"
-	"github.com/opencontainers/runc/libcontainer/user"
-	"github.com/opencontainers/runc/libcontainer/utils"
+	"github.com/Furisto/runc/libcontainer"
+	"github.com/Furisto/runc/libcontainer/user"
+	"github.com/Furisto/runc/libcontainer/utils"
 	"github.com/urfave/cli"
 )
 

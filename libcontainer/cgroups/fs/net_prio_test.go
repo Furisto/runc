@@ -4,8 +4,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/opencontainers/runc/libcontainer/cgroups/fscommon"
-	"github.com/opencontainers/runc/libcontainer/configs"
+	"github.com/Furisto/runc/libcontainer/cgroups/fscommon"
+	"github.com/Furisto/runc/libcontainer/configs"
 )
 
 var prioMap = []*configs.IfPrioMap{

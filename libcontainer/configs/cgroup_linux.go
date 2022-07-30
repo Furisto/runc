@@ -1,8 +1,8 @@
 package configs
 
 import (
+	"github.com/Furisto/runc/libcontainer/devices"
 	systemdDbus "github.com/coreos/go-systemd/v22/dbus"
-	"github.com/opencontainers/runc/libcontainer/devices"
 )
 
 type FreezerState string

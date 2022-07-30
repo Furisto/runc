@@ -3,7 +3,7 @@ package libcontainer
 import (
 	"testing"
 
-	"github.com/opencontainers/runc/libcontainer/configs"
+	"github.com/Furisto/runc/libcontainer/configs"
 )
 
 func TestCheckMountDestOnProc(t *testing.T) {

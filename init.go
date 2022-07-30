@@ -5,8 +5,8 @@ import (
 	"runtime"
 	"strconv"
 
-	"github.com/opencontainers/runc/libcontainer"
-	_ "github.com/opencontainers/runc/libcontainer/nsenter"
+	"github.com/Furisto/runc/libcontainer"
+	_ "github.com/Furisto/runc/libcontainer/nsenter"
 	"github.com/sirupsen/logrus"
 )
 

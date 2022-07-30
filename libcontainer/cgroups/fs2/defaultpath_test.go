@@ -21,7 +21,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/opencontainers/runc/libcontainer/cgroups"
+	"github.com/Furisto/runc/libcontainer/cgroups"
 )
 
 func TestParseCgroupFromReader(t *testing.T) {

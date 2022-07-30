@@ -58,4 +58,4 @@ ENV LIBSECCOMP_VERSION=$LIBSECCOMP_VERSION
 ENV LD_LIBRARY_PATH=/opt/libseccomp/lib
 ENV PKG_CONFIG_PATH=/opt/libseccomp/lib/pkgconfig
 
-WORKDIR /go/src/github.com/opencontainers/runc
+WORKDIR /go/src/github.com/Furisto/runc

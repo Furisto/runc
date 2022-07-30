@@ -1,4 +1,4 @@
-module github.com/opencontainers/runc
+module github.com/Furisto/runc
 
 go 1.17
 

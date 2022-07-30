@@ -12,13 +12,13 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/opencontainers/runc/libcontainer/cgroups"
-	"github.com/opencontainers/runc/libcontainer/cgroups/fs2"
-	"github.com/opencontainers/runc/libcontainer/configs"
-	"github.com/opencontainers/runc/libcontainer/intelrdt"
-	"github.com/opencontainers/runc/libcontainer/logs"
-	"github.com/opencontainers/runc/libcontainer/system"
-	"github.com/opencontainers/runc/libcontainer/utils"
+	"github.com/Furisto/runc/libcontainer/cgroups"
+	"github.com/Furisto/runc/libcontainer/cgroups/fs2"
+	"github.com/Furisto/runc/libcontainer/configs"
+	"github.com/Furisto/runc/libcontainer/intelrdt"
+	"github.com/Furisto/runc/libcontainer/logs"
+	"github.com/Furisto/runc/libcontainer/system"
+	"github.com/Furisto/runc/libcontainer/utils"
 	"github.com/opencontainers/runtime-spec/specs-go"
 	"github.com/sirupsen/logrus"
 	"golang.org/x/sys/unix"
@@ -123,7 +123,7 @@ func (p *setnsProcess) start() (retErr error) {
 	for _, path := range p.cgroupPaths {
 		if err := cgroups.WriteCgroupProc(path, p.pid()); err != nil && !p.rootlessCgroups {
 			// On cgroup v2 + nesting + domain controllers, WriteCgroupProc may fail with EBUSY.
-			// https://github.com/opencontainers/runc/issues/2356#issuecomment-621277643
+			// https://github.com/Furisto/runc/issues/2356#issuecomment-621277643
 			// Try to join the cgroup of InitProcessPid.
 			if cgroups.IsCgroup2UnifiedMode() && p.initProcessPid != 0 {
 				initProcCgroupFile := fmt.Sprintf("/proc/%d/cgroup", p.initProcessPid)

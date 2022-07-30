@@ -13,12 +13,12 @@ import (
 	"golang.org/x/sys/unix"
 
 	//nolint:revive // Enable cgroup manager to manage devices
-	_ "github.com/opencontainers/runc/libcontainer/cgroups/devices"
-	"github.com/opencontainers/runc/libcontainer/cgroups/manager"
-	"github.com/opencontainers/runc/libcontainer/configs"
-	"github.com/opencontainers/runc/libcontainer/configs/validate"
-	"github.com/opencontainers/runc/libcontainer/intelrdt"
-	"github.com/opencontainers/runc/libcontainer/utils"
+	_ "github.com/Furisto/runc/libcontainer/cgroups/devices"
+	"github.com/Furisto/runc/libcontainer/cgroups/manager"
+	"github.com/Furisto/runc/libcontainer/configs"
+	"github.com/Furisto/runc/libcontainer/configs/validate"
+	"github.com/Furisto/runc/libcontainer/intelrdt"
+	"github.com/Furisto/runc/libcontainer/utils"
 	"github.com/sirupsen/logrus"
 )
 
@@ -82,7 +82,7 @@ func Create(root, id string, config *configs.Config) (*Container, error) {
 		if len(pids) != 0 {
 			// TODO: return an error.
 			logrus.Warnf("container's cgroup is not empty: %d process(es) found", len(pids))
-			logrus.Warn("DEPRECATED: running container in a non-empty cgroup won't be supported in runc 1.2; https://github.com/opencontainers/runc/issues/3132")
+			logrus.Warn("DEPRECATED: running container in a non-empty cgroup won't be supported in runc 1.2; https://github.com/Furisto/runc/issues/3132")
 		}
 	}
 

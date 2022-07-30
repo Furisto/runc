@@ -27,11 +27,11 @@ import (
 	"golang.org/x/sys/unix"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/opencontainers/runc/libcontainer/cgroups"
-	"github.com/opencontainers/runc/libcontainer/configs"
-	"github.com/opencontainers/runc/libcontainer/intelrdt"
-	"github.com/opencontainers/runc/libcontainer/system"
-	"github.com/opencontainers/runc/libcontainer/utils"
+	"github.com/Furisto/runc/libcontainer/cgroups"
+	"github.com/Furisto/runc/libcontainer/configs"
+	"github.com/Furisto/runc/libcontainer/intelrdt"
+	"github.com/Furisto/runc/libcontainer/system"
+	"github.com/Furisto/runc/libcontainer/utils"
 )
 
 const stdioFdCount = 3
@@ -503,7 +503,7 @@ func (c *Container) commandTemplate(p *Process, childInitPipe *os.File, childLog
 
 // shouldSendMountSources says whether the child process must setup bind mounts with
 // the source pre-opened (O_PATH) in the host user namespace.
-// See https://github.com/opencontainers/runc/issues/2484
+// See https://github.com/Furisto/runc/issues/2484
 func (c *Container) shouldSendMountSources() bool {
 	// Passing the mount sources via SCM_RIGHTS is only necessary when
 	// both userns and mntns are active.
@@ -1349,7 +1349,7 @@ func (c *Container) prepareCriuRestoreMounts(mounts []*configs.Mount) error {
 			// points for mounts in bind mounts.
 			// This also happens during initial container creation.
 			// Without this CRIU restore will fail
-			// See: https://github.com/opencontainers/runc/issues/2748
+			// See: https://github.com/Furisto/runc/issues/2748
 			// It is also not necessary to order the mount points
 			// because during initial container creation mounts are
 			// set up in the order they are configured.

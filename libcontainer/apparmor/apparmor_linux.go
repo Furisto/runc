@@ -6,7 +6,7 @@ import (
 	"os"
 	"sync"
 
-	"github.com/opencontainers/runc/libcontainer/utils"
+	"github.com/Furisto/runc/libcontainer/utils"
 )
 
 var (

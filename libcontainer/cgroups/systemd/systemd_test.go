@@ -4,8 +4,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/opencontainers/runc/libcontainer/cgroups"
-	"github.com/opencontainers/runc/libcontainer/configs"
+	"github.com/Furisto/runc/libcontainer/cgroups"
+	"github.com/Furisto/runc/libcontainer/configs"
 )
 
 func newManager(t *testing.T, config *configs.Cgroup) (m cgroups.Manager) {

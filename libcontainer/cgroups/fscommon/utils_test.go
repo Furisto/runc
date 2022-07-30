@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/opencontainers/runc/libcontainer/cgroups"
+	"github.com/Furisto/runc/libcontainer/cgroups"
 )
 
 const (
